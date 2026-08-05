@@ -59,3 +59,5 @@ Categorize findings by severity:
 ## Positive Notes
 - What was done well
 ```
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for Real Engineers

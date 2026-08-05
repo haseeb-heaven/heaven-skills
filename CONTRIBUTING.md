@@ -103,8 +103,18 @@ Before submitting:
 When including third-party skills, always attribute the original author in the SKILL.md footer:
 
 ```markdown
-**Author:** Original Author Name / Organization
+**Source:** [author-or-org/repo](https://github.com/author-or-org/repo) — short description
 ```
+
+### Recommended Third-Party Sources
+
+Prefer skills from these battle-tested, community-verified repositories:
+
+| Source | What It Contains |
+|--------|------------------|
+| [mattpocock/skills](https://github.com/mattpocock/skills) | Engineering skills — tdd, code-review, research, prototype, diagnosing-bugs, etc. |
+| [kunchenguid/no-mistakes](https://github.com/kunchenguid/no-mistakes) | `no-mistakes` — git push quality gate for clean PRs |
+| [skills.sh](https://www.skills.sh) | Search engine for discovering more skills to curate |
 
 If you're unsure of the original author, use `Unknown` rather than omitting attribution.
 

@@ -85,3 +85,5 @@ Date: YYYY-MM-DD
 | CQRS | Separate read/write scaling needs | Eventual consistency complexity |
 | Event-driven | Loose coupling, async processing | Debugging distributed systems |
 | Microservices | Independent deployment at scale | Operational complexity |
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for Real Engineers

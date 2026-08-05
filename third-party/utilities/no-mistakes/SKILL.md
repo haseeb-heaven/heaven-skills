@@ -98,3 +98,5 @@ npx ts-node scripts/validate-changes.ts # Custom validation script
 ### Overall Confidence Score: X/10
 [Rationale for score]
 ```
+
+**Source:** [kunchenguid/no-mistakes](https://github.com/kunchenguid/no-mistakes) — "git push no-mistakes" — clean PRs by default

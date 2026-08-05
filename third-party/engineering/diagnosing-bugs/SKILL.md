@@ -78,3 +78,5 @@ Apply the minimal fix that addresses the root cause. Run the reproduction test. 
 ### Prevention
 [How to avoid this class of bug going forward]
 ```
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for Real Engineers

@@ -1,11 +1,12 @@
-chore: initialize heaven-skills repository
+feat: trim AWS to 3, add greploop, attribute curated sources
 
-Complete skill collection with 36 SKILL.md files across categories:
-- first-party/: pr-review, implementor (custom-built)
-- third-party/aws/: 16 AWS ecosystem skills
-- third-party/engineering/: 8 engineering workflow skills
-- third-party/utilities/: 10 general utility skills
-
-Plus README.md, MIT License, CONTRIBUTING.md, CODE_OF_CONDUCT.md, .gitignore.
+- AWS: keep only aws-cdk (managing), aws-deployment (push to prod),
+  aws-observability (usage check); remove other 13 AWS skills
+- first-party: add greploop — grep → fix → re-grep verification loop
+  for fixing repeated code issues at scale
+- third-party/engineering: attribute all 8 skills to mattpocock/skills
+- third-party/utilities: attribute no-mistakes to kunchenguid/no-mistakes
+- README: 24 skills, skills.sh badge + curated sources section
+- CONTRIBUTING: recommended third-party sources (mattpocock, kunchenguid)
 
 Co-authored-by: CommandCodeBot <noreply@commandcode.ai>

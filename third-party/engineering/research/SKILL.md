@@ -82,3 +82,5 @@ Combine findings into actionable conclusions:
 | Technology evaluation (3-4 options) | Half day |
 | Security audit of a dependency | 2-4 hours |
 | Architecture research (complex topic) | 1-2 days |
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for Real Engineers

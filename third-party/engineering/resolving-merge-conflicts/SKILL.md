@@ -81,3 +81,5 @@ git commit -m "Merge <branch>: resolve conflicts in [files]"
 2. **Small, focused commits** — Smaller diffs = smaller conflicts
 3. **Communicate** — Tell teammates you're changing shared files early
 4. **Use feature flags** — Decouple deployment from activation to avoid integration conflicts
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for Real Engineers

@@ -86,3 +86,5 @@ If your model doesn't handle real scenarios, it needs refinement.
 ## Domain Events
 - **Event**: Triggers, payload, handlers
 ```
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for Real Engineers

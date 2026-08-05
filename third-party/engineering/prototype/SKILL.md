@@ -93,3 +93,5 @@ Delete the prototype. Archive findings in project notes. Don't leave junk.
 ### Prototype Location
 [File path or link — will be deleted after review]
 ```
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) — Skills for Real Engineers
