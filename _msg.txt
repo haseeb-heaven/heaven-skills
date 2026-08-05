@@ -1,12 +1,11 @@
-feat: trim AWS to 3, add greploop, attribute curated sources
+feat(telegram): add 3 Telegram bot skills + README category
 
-- AWS: keep only aws-cdk (managing), aws-deployment (push to prod),
-  aws-observability (usage check); remove other 13 AWS skills
-- first-party: add greploop — grep → fix → re-grep verification loop
-  for fixing repeated code issues at scale
-- third-party/engineering: attribute all 8 skills to mattpocock/skills
-- third-party/utilities: attribute no-mistakes to kunchenguid/no-mistakes
-- README: 24 skills, skills.sh badge + curated sources section
-- CONTRIBUTING: recommended third-party sources (mattpocock, kunchenguid)
+- telegram-send-message: one-way — send message updates via Bot API + curl
+  (sendMessage, markdown/HTML, rate limits, troubleshooting)
+- telegram-two-way: two-way — interactive bot, getUpdates polling & webhooks,
+  replies, inline keyboards, conversation state
+- telegram-get-chat-id: get bot API key from BotFather + read user/group/
+  channel chat IDs via getUpdates and getMe
+- README: new "Third-Party Skills: Telegram (3)" section, counts 27 skills
 
 Co-authored-by: CommandCodeBot <noreply@commandcode.ai>

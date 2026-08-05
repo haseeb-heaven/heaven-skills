@@ -1,9 +1,9 @@
 # Heaven Skills 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-24-brightgreen)](#available-skills)
+[![Skills](https://img.shields.io/badge/Skills-27-brightgreen)](#available-skills)
 [![First Party](https://img.shields.io/badge/First%20Party-3-lightblue)](#first-party-skills)
-[![Third Party](https://img.shields.io/badge/Third%20Party-21-orange)](#third-party-skills)
+[![Third Party](https://img.shields.io/badge/Third%20Party-24-orange)](#third-party-skills)
 [![skills.sh](https://skills.sh/b/haseeb-heaven/heaven-skills)](https://www.skills.sh)
 [![Command Code](https://img.shields.io/badge/Command%20Code-Compatible-6b46c1)](https://www.commandcode.ai)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-000?logo=anthropic)](https://docs.anthropic.com/en/docs/claude-code/skills)
@@ -51,6 +51,7 @@ heaven-skills/
 └── third-party/              ⬅  Curated community & vendor skills
     ├── aws/                  3 AWS skills (CDK, deployment, observability)
     ├── engineering/          8 skills from mattpocock/skills
+    ├── telegram/             3 Telegram bot skills
     └── utilities/            10 general utility skills
 ```
 
@@ -90,6 +91,16 @@ Curated from [**mattpocock/skills**](https://github.com/mattpocock/skills) — "
 | [**research**](third-party/engineering/research/SKILL.md) | Systematic technical research with evidence-based recommendations | `.../third-party/engineering/research` |
 | [**resolving-merge-conflicts**](third-party/engineering/resolving-merge-conflicts/SKILL.md) | Systematic merge conflict resolution preserving intent from both branches | `.../third-party/engineering/resolving-merge-conflicts` |
 | [**tdd**](third-party/engineering/tdd/SKILL.md) | Test-driven development — red/green/refactor loop with anti-pattern detection | `.../third-party/engineering/tdd` |
+
+### Third-Party Skills: Telegram (3)
+
+Telegram Bot API skills for one-way notifications, two-way interactive bots, and credential/ID lookup.
+
+| Skill | Description | Install |
+|-------|-------------|---------|
+| [**telegram-send-message**](third-party/telegram/telegram-send-message/SKILL.md) | One-way — send message updates from a bot via curl (`sendMessage`), formatting, rate limits | `npx skills add haseeb-heaven/heaven-skills/third-party/telegram/telegram-send-message` |
+| [**telegram-two-way**](third-party/telegram/telegram-two-way/SKILL.md) | Two-way — interactive bot: receive messages (`getUpdates`/webhooks) and reply, buttons, conversation state | `npx skills add haseeb-heaven/heaven-skills/third-party/telegram/telegram-two-way` |
+| [**telegram-get-chat-id**](third-party/telegram/telegram-get-chat-id/SKILL.md) | Get the bot API key (BotFather) and read user/group/channel chat IDs via `getUpdates` | `npx skills add haseeb-heaven/heaven-skills/third-party/telegram/telegram-get-chat-id` |
 
 ### Third-Party Skills: Utilities (10)
 
