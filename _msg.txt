@@ -1,0 +1,11 @@
+chore: initialize heaven-skills repository
+
+Complete skill collection with 36 SKILL.md files across categories:
+- first-party/: pr-review, implementor (custom-built)
+- third-party/aws/: 16 AWS ecosystem skills
+- third-party/engineering/: 8 engineering workflow skills
+- third-party/utilities/: 10 general utility skills
+
+Plus README.md, MIT License, CONTRIBUTING.md, CODE_OF_CONDUCT.md, .gitignore.
+
+Co-authored-by: CommandCodeBot <noreply@commandcode.ai>
