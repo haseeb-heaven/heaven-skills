@@ -1,13 +1,15 @@
 ---
 name: requesting-code-review
-description: Use when completing tasks, implementing major features, fixing complex bugs, or preparing changes for merge.
+description: Use when software developers complete implementation tasks, major features, bug fixes, refactors, or source-code changes that need review before merge.
 ---
 
 # Requesting Code Review
 
 > Upstream: `obra/superpowers` — `skills/requesting-code-review/SKILL.md`
 
-Dispatch an independent reviewer with precise requirements and an exact commit range. Do not give the reviewer the implementation session history.
+Dispatch an independent software-code reviewer with precise requirements and an exact commit range. Do not give the reviewer the implementation session history.
+
+**Software-development scope only:** use for source code, tests, migrations, build and deployment configuration, APIs, libraries, scripts, and developer tooling. Do not use for general writing, document review, marketing copy, resumes, research summaries, or non-code approvals.
 
 ## Required workflow
 
@@ -31,8 +33,8 @@ HEAD_SHA=$(git rev-parse HEAD)
 ## Reviewer prompt
 
 ```text
-Review BASE_SHA...HEAD_SHA against the supplied requirements.
-Inspect the complete diff and directly related callers, tests, schemas,
+Review BASE_SHA...HEAD_SHA against the supplied software requirements.
+Inspect the complete code diff and directly related callers, tests, schemas,
 migrations, configuration, and boundaries.
 
 Classify findings as Critical, Important, or Minor. For each finding include:
@@ -48,4 +50,4 @@ Do not approve while Critical or Important findings remain.
 
 ## Red flags
 
-Never skip review because a change appears small. Never trust an agent's completion claim without inspecting the diff and fresh verification evidence.
+Never skip review because a code change appears small. Never trust an agent's completion claim without inspecting the diff and fresh verification evidence.
