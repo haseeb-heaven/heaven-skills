@@ -1,13 +1,15 @@
 ---
 name: react-code-review
-description: Use when reviewing React components, hooks, pages, forms, state management, accessibility, TypeScript integration, or React pull requests before merge.
+description: Use when software developers review React components, hooks, pages, forms, state management, accessibility, TypeScript integration, or React pull requests before merge.
 ---
 
 # React Code Review
 
 > Upstream: `giuseppe-trisciuoglio/developer-kit` — `plugins/developer-kit-typescript/skills/react-code-review/SKILL.md`
 
-Review React changes for correctness, architecture, accessibility, performance, and production readiness. Respect the React version and existing project conventions.
+Review React source-code changes for correctness, architecture, accessibility, performance, and production readiness. Respect the React version and existing project conventions.
+
+**Software-development scope only:** use for React, TypeScript, JavaScript, frontend tests, build configuration, browser behavior, and code-review workflows. Do not use for visual-brand critique, marketing copy, general design writing, resumes, documents, or non-code content.
 
 ## Review areas
 
