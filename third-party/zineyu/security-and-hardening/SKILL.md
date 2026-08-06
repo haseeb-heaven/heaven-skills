@@ -1,13 +1,15 @@
 ---
 name: security-and-hardening
-description: Use when code handles authentication, authorization, user input, file uploads, sensitive data, payments, webhooks, external integrations, multi-tenant access, or production security review.
+description: Use when software code handles authentication, authorization, user input, file uploads, sensitive data, payments, webhooks, external integrations, multi-tenant access, or production security review.
 ---
 
 # Security and Hardening
 
 > Upstream: `zineyu/skills` — `skills/engineering/security-and-hardening/SKILL.md`
 
-Review trust boundaries and harden the application against realistic abuse. Prioritize exploitable defects over generic checklist output.
+Review software trust boundaries and harden applications against realistic abuse. Prioritize exploitable defects over generic checklist output.
+
+**Software-development scope only:** use for application source code, APIs, infrastructure and deployment configuration, databases, tests, dependencies, CI/CD, and runtime security. Do not use for physical security, personal safety, policy writing, generic compliance prose, resumes, documents, or non-code content.
 
 ## Threat model first
 
