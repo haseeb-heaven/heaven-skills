@@ -1,13 +1,15 @@
 ---
 name: remove-ai-slops
-description: Use when cleaning AI-generated code, removing slop from recent changes, simplifying agent-written code, or preparing a generated diff for production review.
+description: Use when software developers need to clean AI-generated source code, simplify agent-written implementation changes, or prepare a code diff for production review.
 ---
 
 # Remove AI Slops
 
 > Upstream: `code-yeongyu/oh-my-openagent` — `packages/shared-skills/skills/remove-ai-slops/SKILL.md`
 
-Clean a bounded diff while preserving observable behavior.
+Clean a bounded source-code diff while preserving observable software behavior.
+
+**Software-development scope only:** use for application code, tests, scripts, configuration, migrations, build files, and developer tooling. Do not use for prose, articles, marketing copy, resumes, general documents, research summaries, or non-code content.
 
 **Safety invariant:** establish green regression coverage before deleting or restructuring code.
 
