@@ -197,3 +197,5 @@ A PR can be reported as **ready for human merge review** only when:
 ## Principle
 
 A good PR pipeline does not prove that code is perfect. It proves that the expected review and verification steps ran, failures were not hidden, and the final decision is handed to a human with clear evidence.
+
+**Authorship:** Created by haseeb-heaven with Codex assistance.
