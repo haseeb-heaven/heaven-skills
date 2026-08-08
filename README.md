@@ -98,7 +98,7 @@ Official skills maintained by **Amazon Web Services** — infrastructure managem
 | Skill | Description | Install |
 |-------|-------------|---------|
 | [**aws-cdk**](third-party/aws/aws-cdk/SKILL.md) | Managing — author, deploy & troubleshoot CDK stacks (TypeScript/Python), construct patterns, safe refactoring | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-cdk` |
-| [**aws-deployment**](third-party/aws/aws-deployment/SKILL.md) | Push to Prod — CI/CD pipelines (CodePipeline, CodeBuild, CodeDeploy, CodeArtifact), blue/green & canary strategies | `npx skills add haseeb-heaven/heaven-skills/third-party/aws-deployment` |
+| [**aws-deployment**](third-party/aws/aws-deployment/SKILL.md) | Push to Prod — CI/CD pipelines (CodePipeline, CodeBuild, CodeDeploy, CodeArtifact), blue/green & canary strategies | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-deployment` |
 | [**aws-observability**](third-party/aws/aws-observability/SKILL.md) | Usage check — CloudWatch, X-Ray, Application Signals, dashboards, alarms, log insights | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-observability` |
 
 ### Third-Party Skills: Engineering (8)
