@@ -1,8 +1,8 @@
 # Heaven Skills 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-61-brightgreen)](#available-skills)
-[![First Party](https://img.shields.io/badge/First%20Party-6-lightblue)](#first-party-skills)
+[![Skills](https://img.shields.io/badge/Skills-62-brightgreen)](#available-skills)
+[![First Party](https://img.shields.io/badge/First%20Party-7-lightblue)](#first-party-skills)
 [![Third Party](https://img.shields.io/badge/Third%20Party-55-orange)](#third-party-skills)
 [![skills.sh](https://skills.sh/b/haseeb-heaven/heaven-skills)](https://www.skills.sh)
 [![Command Code](https://img.shields.io/badge/Command%20Code-Compatible-6b46c1)](https://www.commandcode.ai)
@@ -26,6 +26,7 @@ Examples:
 # First-party: custom skills
 npx skills add haseeb-heaven/heaven-skills/first-party/greploop
 npx skills add haseeb-heaven/heaven-skills/first-party/pr-review
+npx skills add haseeb-heaven/heaven-skills/first-party/smart-pr-pipeline
 npx skills add haseeb-heaven/heaven-skills/first-party/telegram/telegram-two-way
 
 # Third-party: AWS
@@ -54,6 +55,7 @@ heaven-skills/
 │   ├── greploop/             Grep → fix → re-grep verification loop
 │   ├── pr-review/            AI-powered PR review with severity classification
 │   ├── implementor/          Structured implementation workflow
+│   ├── smart-pr-pipeline/    Guarded PR review, fix, validation, and CI loop
 │   └── telegram/             3 Telegram bot skills (send, two-way, chat-id)
 │
 └── third-party/              ⬅  Curated community & vendor skills
@@ -66,17 +68,18 @@ heaven-skills/
 
 ## Available Skills
 
-### First-Party Skills (6)
+### First-Party Skills (7)
 
 Custom-built skills authored by **haseeb-heaven**.
 
-#### Core (3)
+#### Core (4)
 
 | Skill | Description | Install |
 |-------|-------------|---------|
 | [**greploop**](first-party/greploop/SKILL.md) | The grep → fix → re-grep loop for fixing repeated code issues at scale. Find every occurrence, fix them all, verify zero remain | `npx skills add haseeb-heaven/heaven-skills/first-party/greploop` |
 | [**pr-review**](first-party/pr-review/SKILL.md) | AI-powered pull request review — analyzes diffs, identifies bugs, suggests improvements with severity levels | `npx skills add haseeb-heaven/heaven-skills/first-party/pr-review` |
 | [**implementor**](first-party/implementor/SKILL.md) | Structured implementation workflow — breaks down requirements, writes clean code, validates with tests | `npx skills add haseeb-heaven/heaven-skills/first-party/implementor` |
+| [**smart-pr-pipeline**](first-party/smart-pr-pipeline/SKILL.md) | Guarded PR review pipeline — coordinates review, fixes, tests, lint, CI, re-review, and human merge handoff without automatic merging | `npx skills add haseeb-heaven/heaven-skills/first-party/smart-pr-pipeline` |
 
 #### Telegram (3)
 
@@ -95,7 +98,7 @@ Official skills maintained by **Amazon Web Services** — infrastructure managem
 | Skill | Description | Install |
 |-------|-------------|---------|
 | [**aws-cdk**](third-party/aws/aws-cdk/SKILL.md) | Managing — author, deploy & troubleshoot CDK stacks (TypeScript/Python), construct patterns, safe refactoring | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-cdk` |
-| [**aws-deployment**](third-party/aws/aws-deployment/SKILL.md) | Push to Prod — CI/CD pipelines (CodePipeline, CodeBuild, CodeDeploy, CodeArtifact), blue/green & canary strategies | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-deployment` |
+| [**aws-deployment**](third-party/aws/aws-deployment/SKILL.md) | Push to Prod — CI/CD pipelines (CodePipeline, CodeBuild, CodeDeploy, CodeArtifact), blue/green & canary strategies | `npx skills add haseeb-heaven/heaven-skills/third-party/aws-deployment` |
 | [**aws-observability**](third-party/aws/aws-observability/SKILL.md) | Usage check — CloudWatch, X-Ray, Application Signals, dashboards, alarms, log insights | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-observability` |
 
 ### Third-Party Skills: Engineering (8)
