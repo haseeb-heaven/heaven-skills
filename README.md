@@ -1,8 +1,8 @@
 # Heaven Skills 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-62-brightgreen)](#available-skills)
-[![First Party](https://img.shields.io/badge/First%20Party-7-lightblue)](#first-party-skills)
+[![Skills](https://img.shields.io/badge/Skills-63-brightgreen)](#available-skills)
+[![First Party](https://img.shields.io/badge/First%20Party-8-lightblue)](#first-party-skills)
 [![Third Party](https://img.shields.io/badge/Third%20Party-55-orange)](#third-party-skills)
 [![skills.sh](https://skills.sh/b/haseeb-heaven/heaven-skills)](https://www.skills.sh)
 [![Command Code](https://img.shields.io/badge/Command%20Code-Compatible-6b46c1)](https://www.commandcode.ai)
@@ -27,6 +27,7 @@ Examples:
 npx skills add haseeb-heaven/heaven-skills/first-party/greploop
 npx skills add haseeb-heaven/heaven-skills/first-party/pr-review
 npx skills add haseeb-heaven/heaven-skills/first-party/smart-pr-pipeline
+npx skills add haseeb-heaven/heaven-skills/first-party/self-healing-agents
 npx skills add haseeb-heaven/heaven-skills/first-party/telegram/telegram-two-way
 
 # Third-party: AWS
@@ -56,6 +57,7 @@ heaven-skills/
 │   ├── pr-review/            AI-powered PR review with severity classification
 │   ├── implementor/          Structured implementation workflow
 │   ├── smart-pr-pipeline/    Guarded PR review, fix, validation, and CI loop
+│   ├── self-healing-agents/  Bounded recovery for reliable AI agent workflows
 │   └── telegram/             3 Telegram bot skills (send, two-way, chat-id)
 │
 └── third-party/              ⬅  Curated community & vendor skills
@@ -68,11 +70,11 @@ heaven-skills/
 
 ## Available Skills
 
-### First-Party Skills (7)
+### First-Party Skills (8)
 
 Custom-built skills authored by **haseeb-heaven**.
 
-#### Core (4)
+#### Core (5)
 
 | Skill | Description | Install |
 |-------|-------------|---------|
@@ -80,6 +82,7 @@ Custom-built skills authored by **haseeb-heaven**.
 | [**pr-review**](first-party/pr-review/SKILL.md) | AI-powered pull request review — analyzes diffs, identifies bugs, suggests improvements with severity levels | `npx skills add haseeb-heaven/heaven-skills/first-party/pr-review` |
 | [**implementor**](first-party/implementor/SKILL.md) | Structured implementation workflow — breaks down requirements, writes clean code, validates with tests | `npx skills add haseeb-heaven/heaven-skills/first-party/implementor` |
 | [**smart-pr-pipeline**](first-party/smart-pr-pipeline/SKILL.md) | Guarded PR review pipeline — coordinates review, fixes, tests, lint, CI, re-review, and human merge handoff without automatic merging | `npx skills add haseeb-heaven/heaven-skills/first-party/smart-pr-pipeline` |
+| [**self-healing-agents**](first-party/self-healing-agents/SKILL.md) | Bounded recovery for reliable AI agent workflows — verifies steps, classifies failures, uses safe retries and fallbacks, decomposes repeated failures, and stops before risky actions | `npx skills add haseeb-heaven/heaven-skills/first-party/self-healing-agents` |
 
 #### Telegram (3)
 
