@@ -1,9 +1,9 @@
 # Heaven Skills 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-63-brightgreen)](#available-skills)
-[![First Party](https://img.shields.io/badge/First%20Party-8-lightblue)](#first-party-skills)
-[![Third Party](https://img.shields.io/badge/Third%20Party-55-orange)](#third-party-skills)
+[![Skills](https://img.shields.io/badge/Skills-69-brightgreen)](#available-skills)
+[![First Party](https://img.shields.io/badge/First%20Party-10-lightblue)](#first-party-skills)
+[![Third Party](https://img.shields.io/badge/Third%20Party-59-orange)](#third-party-skills)
 [![skills.sh](https://skills.sh/b/haseeb-heaven/heaven-skills)](https://www.skills.sh)
 [![Command Code](https://img.shields.io/badge/Command%20Code-Compatible-6b46c1)](https://www.commandcode.ai)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-000?logo=anthropic)](https://docs.anthropic.com/en/docs/claude-code/skills)
@@ -53,6 +53,7 @@ heaven-skills/
 ├── CODE_OF_CONDUCT.md        # Community guidelines
 │
 ├── first-party/              ⬅  Skills built by haseeb-heaven
+│   ├── gpt-6-astra-guide/   Astra API migration and prompting guidance
 │   ├── greploop/             Grep → fix → re-grep verification loop
 │   ├── pr-review/            AI-powered PR review with severity classification
 │   ├── implementor/          Structured implementation workflow
@@ -70,14 +71,15 @@ heaven-skills/
 
 ## Available Skills
 
-### First-Party Skills (8)
+### First-Party Skills (10)
 
 Custom-built skills authored by **haseeb-heaven**.
 
-#### Core (5)
+#### Core (7)
 
 | Skill | Description | Install |
 |-------|-------------|---------|
+| [**gpt-6-astra-guide**](first-party/gpt-6-astra-guide/SKILL.md) | Apply the OpenAI Astra model guide to API migrations and agent prompts | `npx skills add haseeb-heaven/heaven-skills/first-party/gpt-6-astra-guide` |
 | [**greploop**](first-party/greploop/SKILL.md) | The grep → fix → re-grep loop for fixing repeated code issues at scale. Find every occurrence, fix them all, verify zero remain | `npx skills add haseeb-heaven/heaven-skills/first-party/greploop` |
 | [**pr-review**](first-party/pr-review/SKILL.md) | AI-powered pull request review — analyzes diffs, identifies bugs, suggests improvements with severity levels | `npx skills add haseeb-heaven/heaven-skills/first-party/pr-review` |
 | [**implementor**](first-party/implementor/SKILL.md) | Structured implementation workflow — breaks down requirements, writes clean code, validates with tests | `npx skills add haseeb-heaven/heaven-skills/first-party/implementor` |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GPT-6 Astra Guide"
+  short_description: "Apply Astra API migration and prompting guidance"
+  default_prompt: "Use $gpt-6-astra-guide to apply the official Astra guide to this project."
