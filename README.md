@@ -1,247 +1,335 @@
-# Heaven Skills 🚀
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-69-brightgreen)](#available-skills)
-[![First Party](https://img.shields.io/badge/First%20Party-10-lightblue)](#first-party-skills)
-[![Third Party](https://img.shields.io/badge/Third%20Party-59-orange)](#third-party-skills)
-[![skills.sh](https://skills.sh/b/haseeb-heaven/heaven-skills)](https://www.skills.sh)
-[![Command Code](https://img.shields.io/badge/Command%20Code-Compatible-6b46c1)](https://www.commandcode.ai)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-000?logo=anthropic)](https://docs.anthropic.com/en/docs/claude-code/skills)
-[![Cline](https://img.shields.io/badge/Cline-Compatible-000?logo=sublimetext)](https://github.com/cline/cline)
+![Heaven Skills banner](https://capsule-render.vercel.app/api?type=waving&color=0:6D28D9,50:2563EB,100:06B6D4&height=230&section=header&text=Heaven%20Skills&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Reusable%20skills%20for%20modern%20AI%20coding%20agents&descAlignY=57&descSize=18)
 
-Curated collection of AI agent skills for Command Code, Claude Code, Cline, OpenCode, and more. Organized into **first-party** (custom-built by haseeb-heaven) and **third-party** (curated from trusted community sources).
+# Heaven Skills
 
-Search all skills on [skills.sh](https://www.skills.sh) — the skill search engine for AI coding agents.
+### A practical, curated skill library for agents that plan, build, review, debug, and ship software.
 
-## Quick Install
+[![Skills](https://img.shields.io/badge/skills-69-22c55e?style=for-the-badge&logo=files&logoColor=white)](#-skill-catalog)
+[![First Party](https://img.shields.io/badge/first--party-10-3b82f6?style=for-the-badge&logo=github&logoColor=white)](#-first-party-skills)
+[![Curated](https://img.shields.io/badge/curated-59-f97316?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](#-curated-community-skills)
+[![License](https://img.shields.io/badge/license-MIT-8b5cf6?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
-Install any skill via npm:
+[![skills.sh](https://skills.sh/b/haseeb-heaven/heaven-skills)](https://skills.sh/haseeb-heaven/heaven-skills)
+
+[**⚡ Quick start**](#-quick-start) · [**🧭 Browse skills**](#-skill-catalog) · [**🌐 Explore skills.sh**](https://skills.sh) · [**🤝 Contribute**](CONTRIBUTING.md)
+
+</div>
+
+---
+
+## ✨ Why Heaven Skills?
+
+Heaven Skills gives AI coding agents focused, reusable operating procedures instead of one-off prompts. Install the collection once, then invoke the right workflow for architecture, implementation, testing, security, code review, deployment, browser verification, or agent recovery.
+
+<table>
+<tr>
+<td width="33%" align="center"><h3>🧠 10 Originals</h3><p>Purpose-built workflows authored and maintained by <a href="https://github.com/haseeb-heaven">haseeb-heaven</a>.</p></td>
+<td width="33%" align="center"><h3>🌍 59 Curated</h3><p>Useful community and vendor skills organized behind one consistent catalog.</p></td>
+<td width="33%" align="center"><h3>🤖 Multi-Agent</h3><p>Portable <code>SKILL.md</code> packages for the major AI coding-agent ecosystems.</p></td>
+</tr>
+</table>
+
+> [!TIP]
+> New here? Start with **`greploop`** for repeated fixes, **`self-healing-agents`** for resilient automation, or **`smart-pr-pipeline`** for guarded delivery.
+
+## ⚡ Quick Start
+
+### Install the collection
 
 ```bash
-npx skills add haseeb-heaven/heaven-skills/[category]/[skill-name]
+npx skills add haseeb-heaven/heaven-skills
 ```
 
-Examples:
+### Install one skill
+
 ```bash
-# First-party: custom skills
-npx skills add haseeb-heaven/heaven-skills/first-party/greploop
-npx skills add haseeb-heaven/heaven-skills/first-party/pr-review
-npx skills add haseeb-heaven/heaven-skills/first-party/smart-pr-pipeline
-npx skills add haseeb-heaven/heaven-skills/first-party/self-healing-agents
-npx skills add haseeb-heaven/heaven-skills/first-party/telegram/telegram-two-way
-
-# Third-party: AWS
-npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-cdk
-
-# Third-party: engineering (mattpocock/skills)
-npx skills add haseeb-heaven/heaven-skills/third-party/engineering/tdd
-
-# Third-party: superpowers (obra/superpowers)
-npx skills add haseeb-heaven/heaven-skills/third-party/superpowers/writing-plans
-
-# Third-party: agent-skills (addyosmani/agent-skills)
-npx skills add haseeb-heaven/heaven-skills/third-party/agent-skills/code-review-and-quality
+npx skills add haseeb-heaven/heaven-skills --skill greploop
+npx skills add haseeb-heaven/heaven-skills --skill self-healing-agents
+npx skills add haseeb-heaven/heaven-skills --skill smart-pr-pipeline
 ```
 
-## Directory Structure
+### Use a skill
 
+```text
+$greploop fix every outdated API call in this repository
+$self-healing-agents make this workflow recover safely from transient failures
+$smart-pr-pipeline review, validate, and prepare this branch for a human merge
 ```
+
+<details>
+<summary><strong>📁 Manual installation</strong></summary>
+
+Copy a skill directory into the location recognized by your agent:
+
+```text
+.agents/skills/      # Universal project location
+~/.codex/skills/     # Codex user skills
+~/.claude/skills/    # Claude Code user skills
+.cline/skills/       # Cline project skills
+```
+
+Restart or reload the agent after installing.
+
+</details>
+
+## 🤖 Agent Compatibility
+
+| Agent | Compatibility | Recommended location |
+|---|:---:|---|
+| **OpenAI Codex** | ✅ | `~/.codex/skills/` or `.agents/skills/` |
+| **Claude Code** | ✅ | `~/.claude/skills/` or `.claude/skills/` |
+| **Cursor** | ✅ | `.cursor/skills/` or `.agents/skills/` |
+| **Cline** | ✅ | `.cline/skills/` or `.agents/skills/` |
+| **OpenCode** | ✅ | Agent/plugin skill directory |
+| **GitHub Copilot** | ✅ | `.github/skills/` or `.agents/skills/` |
+| **Gemini CLI** | ✅ | Agent-supported skill directory |
+| **Windsurf / Goose / Amp** | ✅ | `.agents/skills/` |
+
+> [!NOTE]
+> Exact discovery paths can vary by agent version. The `npx skills` installer detects supported agents and offers compatible destinations.
+
+## 🧭 Skill Catalog
+
+### 🧠 First-Party Skills
+
+Original workflows authored for Heaven Skills.
+
+<details open>
+<summary><strong>⭐ Core workflows — 7 skills</strong></summary>
+
+| Icon | Skill | What it gives your agent |
+|:---:|---|---|
+| 🌌 | [**gpt-6-astra-guide**](first-party/gpt-6-astra-guide/SKILL.md) | Apply current GPT-6 Astra API migration, prompting, autonomy, and verification guidance. |
+| 🔁 | [**greploop**](first-party/greploop/SKILL.md) | Find every occurrence, fix the complete set, and re-grep until zero matches remain. |
+| 🛠️ | [**implementor**](first-party/implementor/SKILL.md) | Turn requirements into scoped implementation work with validation and clean handoff. |
+| 🔎 | [**pr-review**](first-party/pr-review/SKILL.md) | Review pull-request changes and report actionable, severity-ranked findings. |
+| 🧪 | [**production-pr-review**](first-party/production-pr-review/SKILL.md) | Inspect production-facing changes for correctness, regression risk, security, and operability. |
+| ♻️ | [**self-healing-agents**](first-party/self-healing-agents/SKILL.md) | Classify failures, retry safely, switch tactics, decompose repeated failures, and stop before risky actions. |
+| 🚦 | [**smart-pr-pipeline**](first-party/smart-pr-pipeline/SKILL.md) | Coordinate review, fixes, tests, lint, CI, re-review, and a human-controlled merge handoff. |
+
+</details>
+
+<details open>
+<summary><strong>✈️ Telegram automation — 3 skills</strong></summary>
+
+| Icon | Skill | What it gives your agent |
+|:---:|---|---|
+| 🪪 | [**telegram-get-chat-id**](first-party/telegram/telegram-get-chat-id/SKILL.md) | Obtain bot credentials safely and resolve user, group, or channel chat IDs. |
+| 📤 | [**telegram-send-message**](first-party/telegram/telegram-send-message/SKILL.md) | Send formatted one-way Telegram notifications through the Bot API. |
+| 💬 | [**telegram-two-way**](first-party/telegram/telegram-two-way/SKILL.md) | Build interactive bots using updates or webhooks, buttons, replies, and conversation state. |
+
+</details>
+
+### 🌍 Curated Community Skills
+
+These are organized snapshots or adaptations from respected community and vendor projects. Use the **local** link to inspect the version in this repository and the **source** link to follow upstream development.
+
+<details>
+<summary><strong>🏗️ Production engineering — Addy Osmani · 23 skills</strong></summary>
+
+**Source:** [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) · [Browse on skills.sh](https://skills.sh/addyosmani/agent-skills)
+
+| Skill | Focus |
+|---|---|
+| [api-and-interface-design](third-party/agent-skills/api-and-interface-design/SKILL.md) | Stable APIs, contracts, endpoints, and module boundaries |
+| [browser-testing-with-devtools](third-party/agent-skills/browser-testing-with-devtools/SKILL.md) | Runtime browser inspection, console, DOM, and network validation |
+| [ci-cd-and-automation](third-party/agent-skills/ci-cd-and-automation/SKILL.md) | Pipelines, quality gates, test runners, and deployment automation |
+| [code-review-and-quality](third-party/agent-skills/code-review-and-quality/SKILL.md) | Correctness, security, performance, and maintainability review |
+| [code-simplification](third-party/agent-skills/code-simplification/SKILL.md) | Reduce unnecessary complexity without changing behavior |
+| [context-engineering](third-party/agent-skills/context-engineering/SKILL.md) | Rules files, session context, and reliable agent behavior |
+| [debugging-and-error-recovery](third-party/agent-skills/debugging-and-error-recovery/SKILL.md) | Evidence-driven root-cause debugging and recovery |
+| [deprecation-and-migration](third-party/agent-skills/deprecation-and-migration/SKILL.md) | Safe replacement and removal of old systems |
+| [documentation-and-adrs](third-party/agent-skills/documentation-and-adrs/SKILL.md) | Durable documentation and architectural decisions |
+| [doubt-driven-development](third-party/agent-skills/doubt-driven-development/SKILL.md) | Adversarial review of non-trivial decisions |
+| [frontend-ui-engineering](third-party/agent-skills/frontend-ui-engineering/SKILL.md) | Accessible, responsive, production-quality UI engineering |
+| [git-workflow-and-versioning](third-party/agent-skills/git-workflow-and-versioning/SKILL.md) | Branching, commits, conflicts, and versioning discipline |
+| [idea-refine](third-party/agent-skills/idea-refine/SKILL.md) | Turn raw ideas into sharp, actionable concepts |
+| [incremental-implementation](third-party/agent-skills/incremental-implementation/SKILL.md) | Deliver small, verifiable changes instead of large code drops |
+| [interview-me](third-party/agent-skills/interview-me/SKILL.md) | Extract requirements through one focused question at a time |
+| [observability-and-instrumentation](third-party/agent-skills/observability-and-instrumentation/SKILL.md) | Logs, metrics, traces, alerting, and production visibility |
+| [performance-optimization](third-party/agent-skills/performance-optimization/SKILL.md) | Measure and improve frontend, backend, query, and database performance |
+| [planning-and-task-breakdown](third-party/agent-skills/planning-and-task-breakdown/SKILL.md) | Convert specifications into ordered implementation tasks |
+| [security-and-hardening](third-party/agent-skills/security-and-hardening/SKILL.md) | Threat modeling and application hardening |
+| [shipping-and-launch](third-party/agent-skills/shipping-and-launch/SKILL.md) | Pre-launch checks, monitoring, staging, and rollout |
+| [source-driven-development](third-party/agent-skills/source-driven-development/SKILL.md) | Ground implementation decisions in authoritative documentation |
+| [spec-driven-development](third-party/agent-skills/spec-driven-development/SKILL.md) | Define expected behavior before implementation |
+| [using-agent-skills](third-party/agent-skills/using-agent-skills/SKILL.md) | Discover and invoke the right workflow for the task |
+
+</details>
+
+<details>
+<summary><strong>⚡ Superpowers · 12 skills</strong></summary>
+
+**Source:** [obra/superpowers](https://github.com/obra/superpowers) · [Browse on skills.sh](https://skills.sh/obra/superpowers)
+
+| Skill | Focus |
+|---|---|
+| [brainstorming](third-party/superpowers/brainstorming/SKILL.md) | Explore intent and design before creative implementation |
+| [dispatching-parallel-agents](third-party/superpowers/dispatching-parallel-agents/SKILL.md) | Delegate independent work safely |
+| [executing-plans](third-party/superpowers/executing-plans/SKILL.md) | Execute written plans through review checkpoints |
+| [finishing-a-development-branch](third-party/superpowers/finishing-a-development-branch/SKILL.md) | Choose how completed work should be integrated |
+| [receiving-code-review](third-party/superpowers/receiving-code-review/SKILL.md) | Evaluate review feedback with technical rigor |
+| [requesting-code-review](third-party/superpowers/requesting-code-review/SKILL.md) | Request structured review before integration |
+| [subagent-driven-development](third-party/superpowers/subagent-driven-development/SKILL.md) | Execute plans using focused implementer agents |
+| [using-git-worktrees](third-party/superpowers/using-git-worktrees/SKILL.md) | Isolate feature work with Git worktrees |
+| [using-superpowers](third-party/superpowers/using-superpowers/SKILL.md) | Discover and apply process skills consistently |
+| [verification-before-completion](third-party/superpowers/verification-before-completion/SKILL.md) | Require fresh evidence before completion claims |
+| [writing-plans](third-party/superpowers/writing-plans/SKILL.md) | Produce detailed, executable implementation plans |
+| [writing-skills](third-party/superpowers/writing-skills/SKILL.md) | Create and verify dependable agent skills |
+
+</details>
+
+<details>
+<summary><strong>🧱 Engineering discipline — Matt Pocock · 8 skills</strong></summary>
+
+**Source:** [mattpocock/skills](https://github.com/mattpocock/skills) · [Browse on skills.sh](https://skills.sh/mattpocock/skills)
+
+| Skill | Focus |
+|---|---|
+| [code-review](third-party/engineering/code-review/SKILL.md) | Review changed code for material defects |
+| [codebase-design](third-party/engineering/codebase-design/SKILL.md) | Modules, boundaries, coupling, and architecture vocabulary |
+| [diagnosing-bugs](third-party/engineering/diagnosing-bugs/SKILL.md) | Hypothesis testing, isolation, and root-cause analysis |
+| [domain-modeling](third-party/engineering/domain-modeling/SKILL.md) | Entities, value objects, aggregates, and business rules |
+| [prototype](third-party/engineering/prototype/SKILL.md) | Build disposable probes to reduce uncertainty |
+| [research](third-party/engineering/research/SKILL.md) | Evidence-based technical investigation |
+| [resolving-merge-conflicts](third-party/engineering/resolving-merge-conflicts/SKILL.md) | Preserve intent while resolving conflicts |
+| [tdd](third-party/engineering/tdd/SKILL.md) | Red, green, refactor with meaningful tests |
+
+</details>
+
+<details>
+<summary><strong>☁️ AWS · 3 official skills</strong></summary>
+
+**Source:** [aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws) · [Browse on skills.sh](https://skills.sh/aws/agent-toolkit-for-aws)
+
+| Icon | Skill | Focus |
+|:---:|---|---|
+| 🏛️ | [aws-cdk](third-party/aws/aws-cdk/SKILL.md) | Author, deploy, troubleshoot, and refactor CDK stacks |
+| 🚀 | [aws-deployment](third-party/aws/aws-deployment/SKILL.md) | CI/CD, CodePipeline, CodeBuild, blue/green, and canary delivery |
+| 📊 | [aws-observability](third-party/aws/aws-observability/SKILL.md) | CloudWatch, X-Ray, Application Signals, dashboards, and alarms |
+
+</details>
+
+<details>
+<summary><strong>🧰 Utilities · 10 skills</strong></summary>
+
+| Icon | Skill | Focus | Related source/listing |
+|:---:|---|---|---|
+| 🧭 | [find-skills](third-party/utilities/find-skills/SKILL.md) | Discover and compare community skills | [vercel-labs/skills](https://github.com/vercel-labs/skills) |
+| 🛡️ | [git-guardrails-claude-code](third-party/utilities/git-guardrails-claude-code/SKILL.md) | Git hooks and quality guardrails | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| 🔥 | [grilling](third-party/utilities/grilling/SKILL.md) | Expose ambiguous requirements and hidden assumptions | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| 🔄 | [loopy](third-party/utilities/loopy/SKILL.md) | Conversational bot and messaging workflows | [skills.sh listing](https://skills.sh/sickn33/agentic-awesome-skills/loopy) |
+| 👟 | [migrate-to-shoehorn](third-party/utilities/migrate-to-shoehorn/SKILL.md) | Migrate test structures while preserving behavior | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| ✅ | [no-mistakes](third-party/utilities/no-mistakes/SKILL.md) | Pre-merge code-quality validation | [kunchenguid/no-mistakes](https://github.com/kunchenguid/no-mistakes) |
+| 💎 | [obsidian-vault](third-party/utilities/obsidian-vault/SKILL.md) | Programmatic Obsidian knowledge management | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| 🖥️ | [opentui](third-party/utilities/opentui/SKILL.md) | Build rich terminal user interfaces | [anomalyco/opentui](https://github.com/anomalyco/opentui) |
+| 🎓 | [scaffold-exercises](third-party/utilities/scaffold-exercises/SKILL.md) | Generate structured programming exercises | [mattpocock/skills](https://github.com/mattpocock/skills) |
+| 🪝 | [setup-pre-commit](third-party/utilities/setup-pre-commit/SKILL.md) | Configure pre-commit lint, format, test, and security checks | [mattpocock/skills](https://github.com/mattpocock/skills) |
+
+</details>
+
+<details>
+<summary><strong>🎯 Specialized review skills · 3 skills</strong></summary>
+
+| Icon | Skill | Focus | Upstream |
+|:---:|---|---|---|
+| 🧹 | [remove-ai-slops](third-party/anti-slop/remove-ai-slops/SKILL.md) | Remove unnecessary agent-generated code while preserving behavior | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) |
+| ⚛️ | [react-code-review](third-party/developer-kit/react-code-review/SKILL.md) | Review React architecture, hooks, accessibility, and production readiness | [giuseppe-trisciuoglio/developer-kit](https://github.com/giuseppe-trisciuoglio/developer-kit) |
+| 🔐 | [security-and-hardening](third-party/zineyu/security-and-hardening/SKILL.md) | Threat-model and harden software trust boundaries | [zineyu/skills](https://github.com/zineyu/skills) |
+
+</details>
+
+## 🗺️ Repository Map
+
+```text
 heaven-skills/
-├── README.md                 # You are here
-├── LICENSE                   # MIT License
-├── CONTRIBUTING.md           # How to contribute
-├── CODE_OF_CONDUCT.md        # Community guidelines
+├── first-party/                 # 10 original Heaven Skills
+│   ├── gpt-6-astra-guide/
+│   ├── greploop/
+│   ├── implementor/
+│   ├── pr-review/
+│   ├── production-pr-review/
+│   ├── self-healing-agents/
+│   ├── smart-pr-pipeline/
+│   └── telegram/                # 3 Telegram skills
 │
-├── first-party/              ⬅  Skills built by haseeb-heaven
-│   ├── gpt-6-astra-guide/   Astra API migration and prompting guidance
-│   ├── greploop/             Grep → fix → re-grep verification loop
-│   ├── pr-review/            AI-powered PR review with severity classification
-│   ├── implementor/          Structured implementation workflow
-│   ├── smart-pr-pipeline/    Guarded PR review, fix, validation, and CI loop
-│   ├── self-healing-agents/  Bounded recovery for reliable AI agent workflows
-│   └── telegram/             3 Telegram bot skills (send, two-way, chat-id)
+├── third-party/                 # 59 curated community skills
+│   ├── agent-skills/            # 23
+│   ├── anti-slop/               # 1
+│   ├── aws/                     # 3
+│   ├── developer-kit/           # 1
+│   ├── engineering/             # 8
+│   ├── superpowers/             # 12
+│   ├── utilities/               # 10
+│   └── zineyu/                  # 1
 │
-└── third-party/              ⬅  Curated community & vendor skills
-    ├── aws/                  3 AWS skills (CDK, deployment, observability)
-    ├── engineering/          8 skills from mattpocock/skills
-    ├── superpowers/          11 skills from obra/superpowers
-    ├── agent-skills/         23 skills from addyosmani/agent-skills
-    └── utilities/            10 general utility skills
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+└── LICENSE
 ```
 
-## Available Skills
+## 🧩 Skill Format
 
-### First-Party Skills (10)
-
-Custom-built skills authored by **haseeb-heaven**.
-
-#### Core (7)
-
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [**gpt-6-astra-guide**](first-party/gpt-6-astra-guide/SKILL.md) | Apply the OpenAI Astra model guide to API migrations and agent prompts | `npx skills add haseeb-heaven/heaven-skills/first-party/gpt-6-astra-guide` |
-| [**greploop**](first-party/greploop/SKILL.md) | The grep → fix → re-grep loop for fixing repeated code issues at scale. Find every occurrence, fix them all, verify zero remain | `npx skills add haseeb-heaven/heaven-skills/first-party/greploop` |
-| [**pr-review**](first-party/pr-review/SKILL.md) | AI-powered pull request review — analyzes diffs, identifies bugs, suggests improvements with severity levels | `npx skills add haseeb-heaven/heaven-skills/first-party/pr-review` |
-| [**implementor**](first-party/implementor/SKILL.md) | Structured implementation workflow — breaks down requirements, writes clean code, validates with tests | `npx skills add haseeb-heaven/heaven-skills/first-party/implementor` |
-| [**smart-pr-pipeline**](first-party/smart-pr-pipeline/SKILL.md) | Guarded PR review pipeline — coordinates review, fixes, tests, lint, CI, re-review, and human merge handoff without automatic merging | `npx skills add haseeb-heaven/heaven-skills/first-party/smart-pr-pipeline` |
-| [**self-healing-agents**](first-party/self-healing-agents/SKILL.md) | Bounded recovery for reliable AI agent workflows — verifies steps, classifies failures, uses safe retries and fallbacks, decomposes repeated failures, and stops before risky actions | `npx skills add haseeb-heaven/heaven-skills/first-party/self-healing-agents` |
-
-#### Telegram (3)
-
-Telegram Bot API skills for one-way notifications, two-way interactive bots, and credential/ID lookup.
-
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [**telegram-send-message**](first-party/telegram/telegram-send-message/SKILL.md) | One-way — send message updates from a bot via curl (`sendMessage`), formatting, rate limits | `npx skills add haseeb-heaven/heaven-skills/first-party/telegram/telegram-send-message` |
-| [**telegram-two-way**](first-party/telegram/telegram-two-way/SKILL.md) | Two-way — interactive bot: receive messages (`getUpdates`/webhooks) and reply, buttons, conversation state | `npx skills add haseeb-heaven/heaven-skills/first-party/telegram/telegram-two-way` |
-| [**telegram-get-chat-id**](first-party/telegram/telegram-get-chat-id/SKILL.md) | Get the bot API key (BotFather) and read user/group/channel chat IDs via `getUpdates` | `npx skills add haseeb-heaven/heaven-skills/first-party/telegram/telegram-get-chat-id` |
-
-### Third-Party Skills: AWS (3)
-
-Official skills maintained by **Amazon Web Services** — infrastructure management, production deployment, and usage monitoring.
-
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [**aws-cdk**](third-party/aws/aws-cdk/SKILL.md) | Managing — author, deploy & troubleshoot CDK stacks (TypeScript/Python), construct patterns, safe refactoring | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-cdk` |
-| [**aws-deployment**](third-party/aws/aws-deployment/SKILL.md) | Push to Prod — CI/CD pipelines (CodePipeline, CodeBuild, CodeDeploy, CodeArtifact), blue/green & canary strategies | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-deployment` |
-| [**aws-observability**](third-party/aws/aws-observability/SKILL.md) | Usage check — CloudWatch, X-Ray, Application Signals, dashboards, alarms, log insights | `npx skills add haseeb-heaven/heaven-skills/third-party/aws/aws-observability` |
-
-### Third-Party Skills: Engineering (8)
-
-Curated from [**mattpocock/skills**](https://github.com/mattpocock/skills) — "Skills for Real Engineers" (203k ⭐).
-
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [**code-review**](third-party/engineering/code-review/SKILL.md) | Review diffs since last commit — bugs, style, security, performance | `.../third-party/engineering/code-review` |
-| [**codebase-design**](third-party/engineering/codebase-design/SKILL.md) | Shared vocabulary for architecture discussions (modules, boundaries, coupling) | `.../third-party/engineering/codebase-design` |
-| [**diagnosing-bugs**](third-party/engineering/diagnosing-bugs/SKILL.md) | Systematic root cause analysis — binary search, hypothesis testing, isolation | `.../third-party/engineering/diagnosing-bugs` |
-| [**domain-modeling**](third-party/engineering/domain-modeling/SKILL.md) | Extract entities, value objects, aggregates from business requirements | `.../third-party/engineering/domain-modeling` |
-| [**prototype**](third-party/engineering/prototype/SKILL.md) | Build throwaway prototypes fast to validate ideas and reduce risk | `.../third-party/engineering/prototype` |
-| [**research**](third-party/engineering/research/SKILL.md) | Systematic technical research with evidence-based recommendations | `.../third-party/engineering/research` |
-| [**resolving-merge-conflicts**](third-party/engineering/resolving-merge-conflicts/SKILL.md) | Systematic merge conflict resolution preserving intent from both branches | `.../third-party/engineering/resolving-merge-conflicts` |
-| [**tdd**](third-party/engineering/tdd/SKILL.md) | Test-driven development — red/green/refactor loop with anti-pattern detection | `.../third-party/engineering/tdd` |
-
-### Third-Party Skills: Superpowers (11)
-
-Curated from [**obra/superpowers**](https://github.com/obra/superpowers) — Jesse Vincent's "superpowers" skill collection for AI agents.
-
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [**brainstorming**](third-party/superpowers/brainstorming/SKILL.md) | Mandatory pre-work before any creative work — explores user intent, requirements, and constraints | `.../third-party/superpowers/brainstorming` |
-| [**dispatching-parallel-agents**](third-party/superpowers/dispatching-parallel-agents/SKILL.md) | Delegate 2+ independent tasks to parallel subagents without shared state | `.../third-party/superpowers/dispatching-parallel-agents` |
-| [**executing-plans**](third-party/superpowers/executing-plans/SKILL.md) | Execute a written implementation plan in a separate session with review checkpoints | `.../third-party/superpowers/executing-plans` |
-| [**finishing-a-development-branch**](third-party/superpowers/finishing-a-development-branch/SKILL.md) | Decide how to integrate completed work — rebase, merge, or squash strategies | `.../third-party/superpowers/finishing-a-development-branch` |
-| [**receiving-code-review**](third-party/superpowers/receiving-code-review/SKILL.md) | Handle review feedback with technical rigor — evaluate before implementing suggestions | `.../third-party/superpowers/receiving-code-review` |
-| [**subagent-driven-development**](third-party/superpowers/subagent-driven-development/SKILL.md) | Execute plans by dispatching fresh implementer subagents per task | `.../third-party/superpowers/subagent-driven-development` |
-| [**using-git-worktrees**](third-party/superpowers/using-git-worktrees/SKILL.md) | Isolated feature work via native git worktrees before executing plans | `.../third-party/superpowers/using-git-worktrees` |
-| [**using-superpowers**](third-party/superpowers/using-superpowers/SKILL.md) | Meta-skill — how to find and invoke skills before any response | `.../third-party/superpowers/using-superpowers` |
-| [**verification-before-completion**](third-party/superpowers/verification-before-completion/SKILL.md) | Run verification commands and confirm output before claiming work is complete | `.../third-party/superpowers/verification-before-completion` |
-| [**writing-plans**](third-party/superpowers/writing-plans/SKILL.md) | Write comprehensive implementation plans before touching code | `.../third-party/superpowers/writing-plans` |
-| [**writing-skills**](third-party/superpowers/writing-skills/SKILL.md) | Create, edit, and verify agent skills — TDD for skills | `.../third-party/superpowers/writing-skills` |
-
-### Third-Party Skills: Agent Skills (23)
-
-Curated from [**addyosmani/agent-skills**](https://github.com/addyosmani/agent-skills) — Addy Osmani's production-grade engineering skills.
-
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [**api-and-interface-design**](third-party/agent-skills/api-and-interface-design/SKILL.md) | Stable API & interface design — REST/GraphQL endpoints, type contracts, module boundaries | `.../third-party/agent-skills/api-and-interface-design` |
-| [**browser-testing-with-devtools**](third-party/agent-skills/browser-testing-with-devtools/SKILL.md) | Test in real browsers via Chrome DevTools — DOM inspection, console errors, network | `.../third-party/agent-skills/browser-testing-with-devtools` |
-| [**ci-cd-and-automation**](third-party/agent-skills/ci-cd-and-automation/SKILL.md) | Automate CI/CD pipelines — quality gates, test runners, deployment automation | `.../third-party/agent-skills/ci-cd-and-automation` |
-| [**code-review-and-quality**](third-party/agent-skills/code-review-and-quality/SKILL.md) | Multi-axis code review before merging — quality, security, performance, maintainability | `.../third-party/agent-skills/code-review-and-quality` |
-| [**code-simplification**](third-party/agent-skills/code-simplification/SKILL.md) | Simplify code for clarity without changing behavior — Chesterton's Fence, Rule of 500 | `.../third-party/agent-skills/code-simplification` |
-| [**context-engineering**](third-party/agent-skills/context-engineering/SKILL.md) | Optimize agent context setup — rules files, session hygiene, output quality | `.../third-party/agent-skills/context-engineering` |
-| [**debugging-and-error-recovery**](third-party/agent-skills/debugging-and-error-recovery/SKILL.md) | Systematic root-cause debugging — failing tests, broken builds, unexpected errors | `.../third-party/agent-skills/debugging-and-error-recovery` |
-| [**deprecation-and-migration**](third-party/agent-skills/deprecation-and-migration/SKILL.md) | Manage deprecation & migration — removing old systems, migrating users | `.../third-party/agent-skills/deprecation-and-migration` |
-| [**documentation-and-adrs**](third-party/agent-skills/documentation-and-adrs/SKILL.md) | Record architectural decisions (ADRs) and documentation for future engineers | `.../third-party/agent-skills/documentation-and-adrs` |
-| [**doubt-driven-development**](third-party/agent-skills/doubt-driven-development/SKILL.md) | Adversarial fresh-context review of every non-trivial decision before it stands | `.../third-party/agent-skills/doubt-driven-development` |
-| [**frontend-ui-engineering**](third-party/agent-skills/frontend-ui-engineering/SKILL.md) | Production-quality, accessible, responsive user-facing UIs | `.../third-party/agent-skills/frontend-ui-engineering` |
-| [**git-workflow-and-versioning**](third-party/agent-skills/git-workflow-and-versioning/SKILL.md) | Structured git workflow — committing, branching, conflicts, multi-branch work | `.../third-party/agent-skills/git-workflow-and-versioning` |
-| [**idea-refine**](third-party/agent-skills/idea-refine/SKILL.md) | Refine raw ideas into sharp, actionable concepts via divergent/convergent thinking | `.../third-party/agent-skills/idea-refine` |
-| [**incremental-implementation**](third-party/agent-skills/incremental-implementation/SKILL.md) | Deliver changes incrementally — never write large code drops at once | `.../third-party/agent-skills/incremental-implementation` |
-| [**interview-me**](third-party/agent-skills/interview-me/SKILL.md) | One-question-at-a-time interview to extract what the user actually wants | `.../third-party/agent-skills/interview-me` |
-| [**observability-and-instrumentation**](third-party/agent-skills/observability-and-instrumentation/SKILL.md) | Logging, metrics, tracing, alerting — make production behavior visible | `.../third-party/agent-skills/observability-and-instrumentation` |
-| [**performance-optimization**](third-party/agent-skills/performance-optimization/SKILL.md) | Optimize performance across frontend, backend, queries, and databases | `.../third-party/agent-skills/performance-optimization` |
-| [**planning-and-task-breakdown**](third-party/agent-skills/planning-and-task-breakdown/SKILL.md) | Break specs into ordered, implementable tasks | `.../third-party/agent-skills/planning-and-task-breakdown` |
-| [**security-and-hardening**](third-party/agent-skills/security-and-hardening/SKILL.md) | Harden code against vulnerabilities — user input, auth, storage, integrations | `.../third-party/agent-skills/security-and-hardening` |
-| [**shipping-and-launch**](third-party/agent-skills/shipping-and-launch/SKILL.md) | Production launch prep — pre-launch checklist, monitoring, staged rollout | `.../third-party/agent-skills/shipping-and-launch` |
-| [**source-driven-development**](third-party/agent-skills/source-driven-development/SKILL.md) | Ground every implementation decision in official, source-cited documentation | `.../third-party/agent-skills/source-driven-development` |
-| [**spec-driven-development**](third-party/agent-skills/spec-driven-development/SKILL.md) | Create specs before coding — new projects, features, ambiguous requirements | `.../third-party/agent-skills/spec-driven-development` |
-| [**using-agent-skills**](third-party/agent-skills/using-agent-skills/SKILL.md) | Meta-skill — discover which skill applies to the current task | `.../third-party/agent-skills/using-agent-skills` |
-
-### Third-Party Skills: Utilities (10)
-
-General-purpose tools and helper skills.
-
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [**no-mistakes**](third-party/utilities/no-mistakes/SKILL.md) | Git push quality gate — from [**kunchenguid/no-mistakes**](https://github.com/kunchenguid/no-mistakes) (7.4k ⭐). Validates code before it reaches a clean PR | `.../third-party/utilities/no-mistakes` |
-| [**find-skills**](third-party/utilities/find-skills/SKILL.md) | Discover and compare available community skills | `.../third-party/utilities/find-skills` |
-| [**loopy**](third-party/utilities/loopy/SKILL.md) | Loopy conversational bot automation & workflows | `.../third-party/utilities/loopy` |
-| [**git-guardrails-claude-code**](third-party/utilities/git-guardrails-claude-code/SKILL.md) | Set up Claude Code git hooks & quality guardrails | `.../third-party/utilities/git-guardrails-claude-code` |
-| [**migrate-to-shoehorn**](third-party/utilities/migrate-to-shoehorn/SKILL.md) | Migrate test files between frameworks & formats | `.../third-party/utilities/migrate-to-shoehorn` |
-| [**scaffold-exercises**](third-party/utilities/scaffold-exercises/SKILL.md) | Generate exercise boilerplate for coding challenges & tutorials | `.../third-party/utilities/scaffold-exercises` |
-| [**setup-pre-commit**](third-party/utilities/setup-pre-commit/SKILL.md) | Configure Husky pre-commit hooks for linting, formatting, testing | `.../third-party/utilities/setup-pre-commit` |
-| [**opentui**](third-party/utilities/opentui/SKILL.md) | Build terminal UIs with OpenTUI (Rust TUI framework) | `.../third-party/utilities/opentui` |
-| [**obsidian-vault**](third-party/utilities/obsidian-vault/SKILL.md) | Search, create & manage Obsidian vault notes programmatically | `.../third-party/utilities/obsidian-vault` |
-| [**grilling**](third-party/utilities/grilling/SKILL.md) | Relentlessly clarify ambiguous requirements before implementation | `.../third-party/utilities/grilling` |
-
-## Curated Sources
-
-This collection pulls recommended third-party skills from trusted, battle-tested sources:
-
-| Source | Repo | Skills Included |
-|--------|------|-----------------|
-| [mattpocock/skills](https://github.com/mattpocock/skills) | "Skills for Real Engineers" — 203k ⭐ | engineering/* (code-review, tdd, research, prototype, etc.) |
-| [obra/superpowers](https://github.com/obra/superpowers) | Jesse Vincent's agent superpowers collection | superpowers/* (brainstorming, writing-plans, subagent-driven-development, etc.) |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | Production-grade engineering skills by Addy Osmani | agent-skills/* (code-review-and-quality, security-and-hardening, spec-driven-development, etc.) |
-| [kunchenguid/no-mistakes](https://github.com/kunchenguid/no-mistakes) | "git push no-mistakes" — 7.4k ⭐ | utilities/no-mistakes |
-| Amazon Web Services | Official AWS agent skills | aws/* (cdk, deployment, observability) |
-| [skills.sh](https://www.skills.sh) | The search engine for AI skills | Everything is installable via `npx skills add` |
-
-## Supported Agents
-
-These skills work across multiple AI coding agents. Install once, use everywhere.
-
-| Agent | Status | Notes |
-|-------|--------|-------|
-| [Command Code](https://www.commandcode.ai) | ✅ Fully compatible | Native skill system — install via `npx skills add` |
-| [Claude Code](https://docs.anthropic.com/en/docs/claude-code/skills) | ✅ Compatible | Skills stored in `~/.claude/skills/` |
-| [Cline](https://github.com/cline/cline) | ✅ Compatible | Skills supported via `.cline/skills/` |
-| [OpenCode](https://opencode.ai) | ✅ Compatible | Plugin-based — most skills work as plugins |
-| [Hermes Agent](https://github.com/hermes-agent) | ✅ Compatible | Skill directory + headroom plugin integration |
-
-## SKILL.md Format
-
-Every skill follows the [skills.sh](https://www.skills.sh) convention:
+Every package is centered on a `SKILL.md` file with YAML metadata and focused operating instructions:
 
 ```markdown
 ---
 name: skill-name
-description: >-
-  Clear description of what the skill does and when to use it.
-version: 1
+description: When and why an agent should use this skill.
 ---
 
-# Skill Title
+# Skill Name
 
-Detailed instructions, warnings, workflows, and references...
-
-**Source:** [Author or upstream repo](link)
+Workflow, constraints, safety rules, examples, and verification steps.
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full contribution guide.
+Optional scripts, references, templates, and assets can live beside the skill file and load only when required.
 
-## Contributing
+## 🔍 Discover More
 
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details on adding new skills or improving existing ones.
+| Directory | Use it for |
+|---|---|
+| [**skills.sh**](https://skills.sh) | Search the open skill ecosystem, compare adoption, and install skills |
+| [**Heaven Skills on skills.sh**](https://skills.sh/haseeb-heaven/heaven-skills) | Open this repository's skills.sh source page |
+| [**Agent Skills specification**](https://agentskills.io) | Understand the portable skill format |
+| [**GitHub topic search**](https://github.com/topics/agent-skills) | Discover source repositories and community projects |
 
-Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before participating.
+## 🤝 Contributing
 
-## License
+Contributions are welcome. You can improve an existing workflow, propose a focused new skill, correct upstream attribution, or add tested supporting resources.
 
-[MIT](LICENSE) — Free to use, modify, and distribute.
+1. Read [CONTRIBUTING.md](CONTRIBUTING.md).
+2. Follow the existing `SKILL.md` structure.
+3. Keep instructions scoped, actionable, and safe.
+4. Verify every relative link and supporting file.
+5. Open a pull request explaining the problem the skill solves.
+
+Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## 🔒 Trust and Safety
+
+> [!IMPORTANT]
+> Skills are instructions that may influence an agent with access to files, shells, credentials, browsers, or external services. Read a skill before installing it, review bundled scripts, verify its upstream source, and use least-privilege permissions.
+
+Curated skills may be adapted snapshots rather than byte-for-byte mirrors of their upstream versions. Upstream projects remain the source of truth for their current releases, licenses, dependencies, and security guidance.
+
+## 📄 License
+
+Heaven Skills is released under the [MIT License](LICENSE). Third-party material remains subject to its applicable upstream license and attribution requirements.
 
 ---
 
-Built and maintained by **[haseeb-heaven](https://github.com/haseeb-heaven)**.
+<div align="center">
+
+### Built with care by [Haseeb Heaven](https://github.com/haseeb-heaven)
+
+If this library helps your agents ship better software, consider giving the repository a ⭐.
+
+[![GitHub followers](https://img.shields.io/github/followers/haseeb-heaven?style=social)](https://github.com/haseeb-heaven)
+[![GitHub stars](https://img.shields.io/github/stars/haseeb-heaven/heaven-skills?style=social)](https://github.com/haseeb-heaven/heaven-skills/stargazers)
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:2563EB,100:6D28D9&height=120&section=footer)
+
+</div>
